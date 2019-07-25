@@ -34,7 +34,7 @@ document.getElementById("classify").addEventListener("click", function(){
     document.getElementById("classificationarea").appendChild(newNotification);
     console.log(results);
     for(var i = 0; i < results.length; i++) {
-      if(results[i].confidence > 0.80) {
+      if(results[i].confidence > 0.60) {
         newNotification.innerHTML= results[i].label + " " + Math.floor(results[i].confidence*100) + "%";
         newNotification.classList.remove('is-danger');
         newNotification.classList.add('is-success');
