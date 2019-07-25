@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web ML</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+</head>
+
+<body>
+  <section class="hero is-medium is-primary">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <img src="Logo.png" width="72" height="32">
+        <p class="logo-text">WEB ML</p>
+      </div>
+    </nav>
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <h1 class="title is-2 is-spaced">
+              Hello Student Technology Mentors!
+            </h1>
+            <h2 class="subtitle is-4">
+              Welcome to the Machine Learning Algorithm Web Side
+              <br>
+              We can try to recognize what type of flowers you have.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section is-medium has-background-light">
+      <div class="container">
+        <h1 class="title">About Web ML</h1>
+        <h2 class="subtitle">
+          A simple site that tries to classify <strong>images</strong>, like the one you're about to see. <br>
+          Our goal is to help use computers in order to classify images for whatever you may need them classified for. <br>
+        </h2>
+        <br>
+        <h1 class="title">How to use</h1>
+        <h2 class="subtitle">
+            <ol>
+                <li>Wait for the model to load.</li>
+                <li>Choose an image.</li>
+                <li>Press classify button and wait</li>
+              </ol>
+        </h2>
+      </div>
+    </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <div class="file">
+            <label class="file-label">
+              <input class="file-input" type="file" name="image" onchange="previewFile()">
+              <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label">
+                  Choose a image...
+                </span>
+              </span>
+            </label>
+          </div>
+          <img class="previewimg" src="" height="200" alt="Image preview...">
+        </div>
+        <div class="column is-half" id="classificationarea">
+          <a class="button is-primary" id="classify">Classify</a>
+          <div class="notification" id="notif">
+            Model Loading...
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="section is-medium has-background-grey">
+      <div class="container ">
+        <h1 class="title">How does it work?</h1>
+        <h2 class="subtitle">
+          Web ML uses something called a <strong>convolutional neural network</strong> <br>
+          That means the computer breaks the image its given into small little pieces and compares them to pretrained model, possibly capable of recognizing the image in seconds.
+        </h2>
+      </div>
+    </section>
+  <footer class="footer has-text-centered">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8-desktop is-offset-2-desktop">
+          <h2 class="subtitle is-4">
+            Contact us
+          </h2>
+          <div>
+						<br>
+						LaGuardia Community College Bookstore<br>
+						Location: Shenker Hall Basement, Room: MB05 - Map<br><br>
+						
+						HOURS OF OPERATION <br>
+						Monday - Thursday: 9:00am - 8:00pm <br>
+						Friday: 9:00am - 3:00pm <br>
+						Saturday & Sunday: CLOSED<br>
+						Phone: 1-718-392-3800 <br><br>
+			
+          </div>
+          <div>
+            Shiven Nayee
+            Shiven.nayee@gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="lib/main.js"></script>
+</body>
+
+</html>
